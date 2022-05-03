@@ -35,7 +35,7 @@ WiFiServer server(80);
 void setup()
 {
     Serial.begin(115200);
-    pinMode(5, OUTPUT);      // set the LED pin mode
+    pinMode(15, OUTPUT);      // set the LED pin mode
 
     delay(10);
 
