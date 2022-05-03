@@ -27,8 +27,8 @@ ported for sparkfun esp32
 
 #include <WiFi.h>
 
-const char* ssid     = "yourssid";
-const char* password = "yourpasswd";
+const char* ssid     = "robot309";
+const char* password = "robot123";
 
 WiFiServer server(80);
 
@@ -102,10 +102,10 @@ void loop(){
 
         // Check to see if the client request was "GET /H" or "GET /L":
         if (currentLine.endsWith("GET /H")) {
-          digitalWrite(5, HIGH);               // GET /H turns the LED on
+          digitalWrite(15, HIGH);               // GET /H turns the LED on
         }
         if (currentLine.endsWith("GET /L")) {
-          digitalWrite(5, LOW);                // GET /L turns the LED off
+          digitalWrite(15, LOW);                // GET /L turns the LED off
         }
       }
     }
